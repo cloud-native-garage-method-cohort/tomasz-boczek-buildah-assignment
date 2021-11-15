@@ -3,15 +3,7 @@ kind: Kustomization
 metadata:
   name: react-app-kustomization
 
-commonLabels:
-  app.kubernetes.io/instance: tomasz-boczek-react-app
-  app.kubernetes.io/name: tomasz-boczek-react-app
-
 resources:
 - deployment.yaml
 - service.yaml
 - route.yaml
-images:
-- name: quay.io/upslopeio/express-sample-app
-  newName: quay.io/tomasz_boczek/buildah-assignment
-  newTag: b949f469cb9aca5381d59c0cbecc5d4ca608f232c60029ec2b0c48d7aece9ad3
