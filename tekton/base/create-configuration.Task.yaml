@@ -30,8 +30,6 @@ spec:
           fi
         }
 
-        ls
-
         cd source/k8s
 
         if [ -f kustomization.yaml ] || [ -f kustomization.yml ] || [ -f Kustomization ]; then
